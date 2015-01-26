@@ -1,0 +1,12 @@
+.site-header {
+	padding-top: 1.5rem;
+	.columns {
+		border-bottom: 2px solid lighten(black, 90);
+		padding-bottom: 1.5rem;
+		.hire {
+			float: right;
+			margin-top: -5px;
+		}
+	}
+}
+

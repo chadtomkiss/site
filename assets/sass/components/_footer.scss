@@ -1,0 +1,19 @@
+.site-footer {
+	background: darken($color-primary, 10);
+	padding: 1.4rem;
+	color: white;
+	.logo {
+		color: white;
+		color: rgba(white, .9);
+	}
+	.social {
+		display: inline-block;
+		float: right;
+		text-align: right;
+		padding-top: .3rem;
+		i {
+			margin-left: 1rem;
+			margin-right: .2rem;
+		}
+	}
+}

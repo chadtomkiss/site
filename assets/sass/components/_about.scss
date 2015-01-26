@@ -1,0 +1,35 @@
+.about-me {
+	background: darken(white, 4);
+	position: relative;
+	padding: 2rem 0;
+	.flush-image {
+		position: absolute;
+		width: 50%;
+		left: 0;
+	}
+	.about-content {
+		float: right;
+		h3 {
+			font-size: 2.6rem;
+			font-family: $font-family-heading;
+			position: relative;
+			color: lighten(black, 30);
+			margin-bottom: 1rem;
+			margin-top: 0;
+			padding-top: 0;
+			&::after {
+				// content: '';
+				// display:block;
+				// position: absolute;
+				// top: 0;
+				// background-color: rgba(black, .2);
+				// width: 70px;
+				// height: 4px;
+				// left: 0;
+			}
+		}
+		p {
+			margin-bottom: 1.4rem;
+		}
+	}
+}

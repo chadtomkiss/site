@@ -1,0 +1,206 @@
+@charset "UTF-8";
+body {
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "franklin-gothic-urw", sans-serif;
+  color: #666666;
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  font-size: 17px; }
+
+* {
+  box-sizing: border-box; }
+
+.intro {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  font-family: "kulturista-web", serif;
+  text-align: center;
+  margin-top: 1.8rem;
+  padding-bottom: 2rem; }
+
+.primary-text {
+  color: #00B598; }
+
+.logo {
+  text-transform: uppercase;
+  font-family: "kulturista-web", serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #666666;
+  font-weight: 400; }
+
+.section-title {
+  text-align: center;
+  margin: auto;
+  font-size: 2.4rem;
+  font-family: "kulturista-web", serif;
+  position: relative;
+  margin-bottom: 2rem; }
+  .section-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 3px;
+    margin-left: -30px;
+    left: 50%; }
+
+.work-quote {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 0;
+  position: relative;
+  padding-top: .6rem; }
+  .work-quote::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 90px;
+    height: 6px;
+    left: 0; }
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: .8rem 2rem;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 1;
+  vertical-align: middle;
+  border: none;
+  font-size: 1rem;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased; }
+
+.btn__primary {
+  background: #00B598;
+  color: white; }
+
+.site-header {
+  padding-top: 1.5rem; }
+  .site-header .columns {
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 1.5rem; }
+    .site-header .columns .hire {
+      float: right;
+      margin-top: -5px; }
+
+.illo {
+  margin-top: 2rem; }
+
+.showcase {
+  background: #00B598;
+  color: white;
+  padding: 2rem; }
+
+.work-display {
+  text-align: center; }
+  .work-display img {
+    width: 80%;
+    margin-bottom: 0;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem; }
+  .work-display p {
+    text-align: left;
+    color: white; }
+  .work-display .button {
+    margin-top: 2rem;
+    background: white;
+    color: #00B598;
+    font-size: 1.2rem;
+    padding: .7rem 2rem;
+    border: none;
+    line-height: 1.4;
+    height: auto; }
+
+.clients {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .clients h3 {
+    font-size: 1.6rem;
+    font-family: "kulturista-web", serif;
+    margin-bottom: 3.8rem; }
+  .clients img {
+    width: 120px; }
+  .clients .sam {
+    width: 80px;
+    margin-top: -35px; }
+  .clients .exo {
+    margin-top: 10px; }
+  .clients .pancake {
+    margin-top: 10px; }
+  .clients .carbon {
+    margin-top: 10px; }
+
+.about-me {
+  background: whitesmoke;
+  position: relative;
+  padding: 2rem 0; }
+  .about-me .flush-image {
+    position: absolute;
+    width: 50%;
+    left: 0; }
+  .about-me .about-content {
+    float: right; }
+    .about-me .about-content h3 {
+      font-size: 2.6rem;
+      font-family: "kulturista-web", serif;
+      position: relative;
+      color: #4d4d4d;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      padding-top: 0; }
+    .about-me .about-content p {
+      margin-bottom: 1.4rem; }
+
+.get-help {
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+  .get-help .quote {
+    font-style: italic;
+    font-family: "kulturista-web", serif;
+    font-size: 2.9rem;
+    font-weight: 100;
+    margin-bottom: .8rem; }
+  .get-help h5 {
+    font-size: 1.3rem;
+    padding-top: 0;
+    margin-top: 0; }
+  .get-help .quote-container {
+    border-left: 8px solid #00B598;
+    padding-left: 38px;
+    position: relative; }
+    .get-help .quote-container:after {
+      content: "“";
+      position: absolute;
+      font-size: 8rem;
+      font-family: "Impact";
+      color: rgba(0, 181, 152, 0.3);
+      top: -40px;
+      left: 10px;
+      font-style: italic; }
+
+.site-footer {
+  background: #00826d;
+  padding: 1.4rem;
+  color: white; }
+  .site-footer .logo {
+    color: white;
+    color: rgba(255, 255, 255, 0.9); }
+  .site-footer .social {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    padding-top: .3rem; }
+    .site-footer .social i {
+      margin-left: 1rem;
+      margin-right: .2rem; }

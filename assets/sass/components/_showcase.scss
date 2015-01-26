@@ -1,0 +1,30 @@
+.showcase {
+	background: $color-primary;
+	color: lighten($color-primary, 65);
+	padding: 2rem;
+}
+
+.work-display {
+	text-align: center;
+	img {
+		width: 80%;
+		margin-bottom: 0;
+		display: block;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+	p {
+		text-align: left;
+		color: white;
+	}
+	.button {
+		margin-top: 2rem;
+		background:white;
+		color: $color-primary;
+		font-size: 1.2rem;
+		padding: .7rem 2rem;
+		border: none;
+		line-height: 1.4;
+		height: auto;
+	}
+}

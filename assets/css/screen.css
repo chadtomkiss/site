@@ -1,4 +1,14 @@
 @charset "UTF-8";
+a {
+  text-decoration: underline;
+  color: #FFF;
+  cursor: pointer; }
+
+a:hover {
+  color: #E6E6E6;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+
 body {
   font-size: 17px;
   line-height: 1.4;
@@ -69,6 +79,7 @@ html {
 
 .btn {
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 600;
   padding: .8rem 2rem;
   display: inline-block;
@@ -83,15 +94,23 @@ html {
 .btn__primary {
   background: #00B598;
   color: white; }
+  .btn__primary:hover {
+    color: #FFF;
+    background: #009c83;
+    -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
 
 .site-header {
   padding-top: 1.5rem; }
   .site-header .columns {
     border-bottom: 2px solid #e6e6e6;
     padding-bottom: 1.5rem; }
+    .site-header .columns .logo:hover {
+      color: #666666; }
     .site-header .columns .hire {
       float: right;
-      margin-top: -5px; }
+      margin-top: -5px;
+      text-decoration: none; }
 
 .illo {
   margin-top: 2rem; }
@@ -124,7 +143,8 @@ html {
 
 .clients {
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  text-align: center; }
   .clients h3 {
     font-size: 1.6rem;
     font-family: "kulturista-web", serif;
@@ -135,9 +155,12 @@ html {
     width: 80px;
     margin-top: -35px; }
   .clients .exo {
-    margin-top: 10px; }
-  .clients .pancake {
-    margin-top: 10px; }
+    margin-top: 10px;
+    width: 140px; }
+  .clients .message {
+    width: 80px;
+    margin-top: -5px;
+    margin-left: -20px; }
   .clients .carbon {
     margin-top: 10px; }
 
@@ -199,8 +222,105 @@ html {
   .site-footer .social {
     display: inline-block;
     float: right;
-    text-align: right;
-    padding-top: .3rem; }
+    text-align: right; }
+    .site-footer .social:hover a {
+      opacity: 0.7; }
+    .site-footer .social a {
+      text-decoration: none; }
     .site-footer .social i {
       margin-left: 1rem;
       margin-right: .2rem; }
+    .site-footer .social a:hover {
+      opacity: 1;
+      color: white; }
+
+.modal-open {
+  overflow: hidden; }
+
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background: rgba(67, 67, 67, 0.8); }
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out; }
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  z-index: 1050; }
+
+.modal-content {
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: none;
+  background: #FFF;
+  padding: 5% 8%; }
+  .modal-content h2 {
+    font-size: 3rem; }
+  .modal-content .links {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10%; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030; }
+
+.modal-backdrop.fade {
+  display: none; }
+
+.modal-backdrop.in {
+  display: none; }
+
+@media screen and (min-width: 550px) {
+  .modal-dialog {
+    width: 550px;
+    padding: 20px;
+    margin: 0 auto; } }
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 700px;
+    padding: 50px;
+    margin: 30px auto; } }
+
+.modal {
+  text-align: center; }
+  .modal h2 {
+    color: #00B598; }
+  .modal .links a {
+    color: #666; }
+  .modal .links a:hover {
+    color: #333333; }
+  .modal .button {
+    margin-top: 2rem;
+    background: white;
+    color: #00B598;
+    font-size: 1.2rem;
+    padding: .7rem 2rem;
+    border: none;
+    line-height: 1.4;
+    height: auto; }

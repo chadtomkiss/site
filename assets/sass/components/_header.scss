@@ -3,9 +3,15 @@
 	.columns {
 		border-bottom: 2px solid lighten(black, 90);
 		padding-bottom: 1.5rem;
+
+		.logo:hover {
+			color: $color-copy;
+		}
+
 		.hire {
 			float: right;
 			margin-top: -5px;
+			text-decoration: none;
 		}
 	}
 }

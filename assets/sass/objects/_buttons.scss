@@ -1,5 +1,6 @@
 .btn {
 	text-transform: uppercase;
+    text-decoration: none;
     font-weight: 600;
     padding: .8rem 2rem;
     display: inline-block;
@@ -15,4 +16,10 @@
 .btn__primary {
     background: $color-primary;
     color: white;
+
+    &:hover {
+        color: #FFF;
+        background: darken($color-primary, 5%);
+        transition: all 0.2s ease-in-out;
+    }
 }

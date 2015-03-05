@@ -425,11 +425,11 @@ there.
 .clients img:hover {
   opacity: 1;
   /*Transition*/
--webkit-transition: All 0.8s ease;
--moz-transition: All 0.8s ease;
--o-transition: All 0.8s ease;
--ms-transition: All 0.8s ease;
-transition: All 0.8s ease;
+  -webkit-transition: All 0.8s ease;
+  -moz-transition: All 0.8s ease;
+  -o-transition: All 0.8s ease;
+  -ms-transition: All 0.8s ease;
+  transition: All 0.8s ease;
 }
 
 q {

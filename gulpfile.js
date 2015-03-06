@@ -9,7 +9,7 @@ gulp.task('sass', function() {
 	gulp.src(['./assets/sass/*.scss'])
 		.pipe(sass())
 		.pipe(autoprefix('last 2 versions'))
-		.pipe(gulp.dest('./assets/css/'))
+		.pipe(gulp.dest('./css/'))
 		.pipe(livereload());
 });
 
